@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Crystal Collector</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <!-- container crystal collector -->
+    <div class="container">
+        <div class="jumbotron" style="background-color: hotpink; color: white;">
+            <h1 class="display-3 text-center">Crystal collector</h1>
+            <p class="lead text-center"><large>instructions</large></p>
+            <hr class="my-2">
+            <p style="background-color: blue; color: white;"><medium>You will be given a random number at the start of the game. There are four crystals.
+                    Clicking on a crystal will add a specific amount of points to your total user score.
+                    You win the game by matching your total user score to the game score, you lose the game
+                    if your total score goes above the game score. The value of each crystal is hidden until
+                    you click on it.Each time the game starts, the game will change the values of each crystal and game
+                    score.</medium></p>
+            
+        </div>
+        <div class="row">
+            <!-- target score -->
+            <div class="col-lg-3">
+                </div>
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title text-center">Target score</h3>
+                    </div>
+                    <div class="panel-body">
+                        <h3 class="text-center"><strong>100</strong></h3>
+
+                    </div>
+                </div>
+                <!-- your score -->
+                <div class="col-lg-3">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title text-center">Your Score</h3>
+                        </div>
+                        <div class="panel-body">
+                            <h3 class="text-center"><strong>15</strong></h3>
+                        </div>
+                    </div>
+                </div>
+                <!-- crystal score -->
+                <div class="col-lg-6" text-center>
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title text-center">Crystal Selection</h3>
+                        </div>
+                        <div class="panel-body text-center col-lg-3 float-right">
+                            <img src="assets/images/blue.jpg" alt="..." id="blue" class="imageDiv img-thumbnail">
+                            <img src="assets/images/green.jpg" alt="..." id="green" class="imageDiv img-thumbnail">
+                            <img src="assets/images/purple.jpg" alt="..." id="purple" class="imageDiv img-thumbnail">
+                            <img src="assets/images/ruby.jpg" alt="..." id="ruby" class="imageDiv img-thumbnail">
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- counters row -->
+    <div class="row">
+        <div class="col-lg-6">
+                <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title text-center">Win Count</h3>
+                        </div>
+                        <div class="panel-body">
+                            <h3 class="text-center" id="winCount">0</h3>
+                        </div>
+                    </div>
+                </div>
+    <div calss="col-lg-6">
+            <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title text-center">Loss Count</h3>
+                    </div>
+                    <div class="panel-body">
+                        <h3 class="text-center" id="lossCount">0</h3>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script src="assets/javascript/game.js"></script>
+
+</body>
+</html>
